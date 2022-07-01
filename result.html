@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<body>
+<div class="output ">
+  <div class="wrapper fadeInDown ">
+    <div id="formContent" class=" ">
+      <div class="fadeIn first mt-2">
+        <img src="download-removebg-preview.png" id="icon" alt="User Icon" />
+      </div> 
+      <h2 class="active"> Student Information </h2>
+      <form>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row mb-2">
+              <div class="col-md-3"></div>
+              <div class="col-md-8" style="text-align: left;">
+                <table style="width:100%">
+                  <tr>
+                    <th>Name</th>
+                    <td id="name"></td>
+                  </tr>
+                  <tr>
+                    <th>Father Name</th>
+                    <td id="fname"></td>
+                  </tr> 
+                  <tr>
+                    <th>Contact</th>
+                    <td id="contact"></td>
+                  </tr> 
+                  <tr>
+                    <th>Institute</th>
+                    <td id="institute"></td>
+                  </tr> 
+                  <tr>
+                    <th>Class</th>
+                    <td id="class"></td>
+                  </tr> 
+                  <tr>
+                    <th>Gender</th>
+                    <td  id="gender"></td>
+                  </tr> 
+                </table>
+              </div>
+            </div>
+            <div class="container">           
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>SR</th>
+                    <th>Subject</th>
+                    <th>Total Marks</th>
+                    <th>Obtaind Marks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td id="sb_1"></td>
+                    <td id="sb_t_1"></td>
+                    <td id="sb_o_1"></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td id="sb_2"></td>
+                    <td id="sb_t_2"></td>
+                    <td id="sb_o_2"></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td id="sb_3"></td>
+                    <td id="sb_t_3"></td>
+                    <td id="sb_o_3"></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td id="sb_4"></td>
+                    <td id="sb_t_4"></td>
+                    <td id="sb_o_4"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const fname = urlParams.get('fname');
+        const contact = urlParams.get('contact');
+        const institute = urlParams.get('institute');
+        const degree = urlParams.get('class');
+        const gender = urlParams.get('gender');
+        const sb_1 = urlParams.get('sb_1');
+        const sb_t_1 = urlParams.get('sb_t_1');
+        const sb_o_1 = urlParams.get('sb_o_1');
+        const sb_2 = urlParams.get('sb_2');
+        const sb_t_2 = urlParams.get('sb_t_2');
+        const sb_o_2 = urlParams.get('sb_o_2');
+        const sb_3 = urlParams.get('sb_3');
+        const sb_t_3 = urlParams.get('sb_t_3');
+        const sb_o_3 = urlParams.get('sb_o_3');
+        const sb_4 = urlParams.get('sb_4');
+        const sb_t_4 = urlParams.get('sb_t_4');
+        const sb_o_4 = urlParams.get('sb_o_4');
+        
+
+        let ab = document.getElementById("name");
+        let cd = document.getElementById("fname");
+        let ef = document.getElementById("contact");
+        let gh = document.getElementById("institute");
+        let ij = document.getElementById("class");
+        let kl = document.getElementById("gender");
+        let mn = document.getElementById("sb_1");
+        let op = document.getElementById("sb_t_1");
+        let qr = document.getElementById("sb_o_1");
+        let st = document.getElementById("sb_2");
+        let uv = document.getElementById("sb_t_2");
+        let wx = document.getElementById("sb_o_2");
+        let yz = document.getElementById("sb_3");
+        let abc = document.getElementById("sb_t_3");
+        let efg = document.getElementById("sb_o_3");
+        let hij = document.getElementById("sb_4");
+        let klm = document.getElementById("sb_t_4");
+        let nop = document.getElementById("sb_o_4");
+
+        ab.innerHTML = name;
+        cd.innerHTML = fname;
+        ef.innerHTML = contact;
+        gh.innerHTML = institute;
+        ij.innerHTML = degree;
+        kl.innerHTML = gender;
+        mn.innerHTML = sb_1;
+        op.innerHTML = sb_t_1;
+        qr.innerHTML = sb_o_1;
+        st.innerHTML = sb_2;
+        uv.innerHTML = sb_t_2;
+        wx.innerHTML = sb_o_2;
+        yz.innerHTML = sb_3;
+        abc.innerHTML = sb_t_3;
+        efg.innerHTML = sb_o_3;
+        hij.innerHTML = sb_4;
+        klm.innerHTML = sb_t_4;
+        nop.innerHTML = sb_o_4;
+        $(document).on('keyup')
+</script>
+</body>
+</html>

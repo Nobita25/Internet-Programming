@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<body>
+<div class="input ">
+	<div class="wrapper fadeInDown ">
+	  	<div id="formContent" class="">
+	  		<div class="fadeIn first mt-2">
+	      		<img src="download-removebg-preview.png" id="icon" alt="User Icon" />
+	    	</div>
+	    	<h2 class="active"> Student Information </h2>
+	    	
+		    <form action="result.html" method="get" >
+		      	<div class="row">
+		        	<div class="col-md-6">
+		          		<input type="text" id="name" class="fadeIn fifth " name="name" placeholder="Name" required>          
+		        	</div>
+		        	<div class="col-md-6">
+		          		<input type="text" id="fname" class="fadeIn second " name="fname" placeholder="Father name" required>          
+		        	</div>
+		      	</div>
+		      	<div class="row">
+		        	<div class="col-md-6">
+		          		<input type="text" id="contact" class="fadeIn third " name="contact" placeholder="Contact Number" required>         
+		        	</div>
+		        	<div class="col-md-6">
+		          		<input type="text" id="institute" class="fadeIn fifth " name="institute" placeholder="Institute" required>          
+		        	</div>
+		      	</div>
+		      	<div class="row">
+		        	<div class="col-md-6">
+	         			<input type="text" id="class" class="fadeIn second " name="class" placeholder="Class" required>         
+		        	</div>
+		        	<div class="col-md-6">
+		        		<input type="text" id="gender" class="fadeIn third " name="gender" placeholder="Gender" required>   
+		        	</div>
+		      	</div>
+		      	<h2 class="active"> Result Record </h2>
+		      	<ol>
+		      		<li>
+		      			<div class="row  ">
+				        	<div class="col-md-4">
+				          		<input type="text" id="sb_1" class="fadeIn third" name="sb_1" placeholder="Subject " required>
+				        	</div>
+				        	<div class="col-md-4">
+				          		<input type="text" id="sb_t_1" class="fadeIn third sb_t_1" name="sb_t_1" placeholder="Total Marks " required>
+				        	</div>
+				        	<div class="col-md-4">
+				          		<input type="text" id="sb_o_1" class="fadeIn third sb_o_1" name="sb_o_1" placeholder="Obtaind Marks " required >
+				        	</div>
+				      	</div>
+		      		</li>
+		      		<li>
+		      			<div class="row  ">
+				        	<div class="col-md-4">
+				          		<input type="text" id="sb_2" class="fadeIn third " name="sb_2" placeholder="Subject " required>
+				        	</div>
+				        	<div class="col-md-4">
+				          		<input type="text" id="sb_t_2" class="fadeIn third sb_t_1" name="sb_t_2" placeholder="Total Marks " required>
+				        	</div>
+				        	<div class="col-md-4">
+				          		<input type="text" id="sb_o_2" class="fadeIn third sb_o_1" name="sb_o_2" placeholder="Obtaind Marks " required maxlength="2">
+				        	</div>
+				      	</div>
+		      		</li>
+		      		<li>
+		      			<div class="row  ">
+				        	<div class="col-md-4">
+				          		<input type="text" id="sb_3" class="fadeIn third" name="sb_3" placeholder="Subject " required>
+				        	</div>
+				        	<div class="col-md-4">
+				          		<input type="text" id="sb_t_3" class="fadeIn third sb_t_1" name="sb_t_3" placeholder="Total Marks " required maxlength="2">
+				        	</div>
+				        	<div class="col-md-4">
+				          		<input type="text" id="sb_o_3" class="fadeIn third sb_o_1" name="sb_o_3" placeholder="Obtaind Marks " required>
+				        	</div>
+				      	</div>
+		      		</li>
+		      		<li>
+		      			<div class="row  ">
+				        	<div class="col-md-4">
+				          		<input type="text" id="sb_4" class="fadeIn third" name="sb_4" placeholder="Subject " required>
+				        	</div>
+				        	<div class="col-md-4">
+				          		<input type="text" id="sb_t_4" class="fadeIn third sb_t_1" name="sb_t_4" placeholder="Total Marks " required>
+				        	</div>
+				        	<div class="col-md-4">
+				          		<input type="text" id="sb_o_4" class="fadeIn third sb_o_1" name="sb_o_4" placeholder="Obtaind Marks " required maxlength="2">
+				        	</div>
+				      	</div>
+		      		</li>
+		      	</ol>
+		      	<input type="submit" class="fadeIn fourth submit" value="Submit">
+		    </form>
+	  	</div>
+	</div>
+</div>
+
+
+<script>
+	$(document).on('keyup',' .sb_o_1',function(){
+		var a = ($(this).closest('.row').find('.sb_t_1').val() *1);
+		var b = ($(this).closest('.row').find('.sb_o_1').val() *1);
+		if(a >= b){
+		}
+		else{
+			alert('Please enter correct Marks');
+			$('.sb_o_1').val("");
+		}
+	})
+	
+</script>
+</body>
+</html>
