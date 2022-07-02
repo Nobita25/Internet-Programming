@@ -2,9 +2,11 @@
 
 /* BASIC */
 
-.hidden
+.aling
 {
-  display: none;
+    text-align: center;
+    border: none!important;
+    background-color: #fff !important;
 }
 html {
   background-color: #56baed;
