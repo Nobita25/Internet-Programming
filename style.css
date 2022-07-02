@@ -1,7 +1,9 @@
     @import url(' https://fonts.googleapis.com/css?family=Poppins');
 
 /* BASIC */
-
+#sb_1, #sb_2, #sb_3, #sb_4{
+    text-align: left !important;
+}
 .aling
 {
     text-align: center;
