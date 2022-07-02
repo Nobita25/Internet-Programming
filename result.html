@@ -3,6 +3,7 @@
 <head>
     <title></title>
 <link rel="stylesheet" href="bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -49,7 +50,7 @@
               </div>
             </div>
             <div class="container">           
-              <table class="table">
+              <table class="table table-bordered">
                 <thead>
                   <tr>
                     <th>SR</th>
@@ -155,6 +156,13 @@
         klm.innerHTML = sb_t_4;
         nop.innerHTML = sb_o_4;
         $(document).on('keyup')
+</script>
+<script>
+  $(document).ready(function(){
+    var total = $('.total').val((+sb_t_1)+(+sb_t_2)+(+sb_t_3)+(+sb_t_4));
+    var obtain = $('.obtain').val((+sb_o_1)+(+sb_o_2)+(+sb_o_3)+(+sb_o_4));
+
+  })
 </script>
 </body>
 </html>
