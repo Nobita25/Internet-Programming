@@ -105,64 +105,78 @@
 </div>
 <script>
         const urlParams = new URLSearchParams(window.location.search);
+
         const name = urlParams.get('name');
-        const fname = urlParams.get('fname');
-        const contact = urlParams.get('contact');
-        const institute = urlParams.get('institute');
-        const degree = urlParams.get('class');
-        const gender = urlParams.get('gender');
-        const sb_1 = urlParams.get('sb_1');
-        const sb_t_1 = urlParams.get('sb_t_1');
-        const sb_o_1 = urlParams.get('sb_o_1');
-        const sb_2 = urlParams.get('sb_2');
-        const sb_t_2 = urlParams.get('sb_t_2');
-        const sb_o_2 = urlParams.get('sb_o_2');
-        const sb_3 = urlParams.get('sb_3');
-        const sb_t_3 = urlParams.get('sb_t_3');
-        const sb_o_3 = urlParams.get('sb_o_3');
-        const sb_4 = urlParams.get('sb_4');
-        const sb_t_4 = urlParams.get('sb_t_4');
-        const sb_o_4 = urlParams.get('sb_o_4');
-        
-
         let ab = document.getElementById("name");
-        let cd = document.getElementById("fname");
-        let ef = document.getElementById("contact");
-        let gh = document.getElementById("institute");
-        let ij = document.getElementById("class");
-        let kl = document.getElementById("gender");
-        let mn = document.getElementById("sb_1");
-        let op = document.getElementById("sb_t_1");
-        let qr = document.getElementById("sb_o_1");
-        let st = document.getElementById("sb_2");
-        let uv = document.getElementById("sb_t_2");
-        let wx = document.getElementById("sb_o_2");
-        let yz = document.getElementById("sb_3");
-        let abc = document.getElementById("sb_t_3");
-        let efg = document.getElementById("sb_o_3");
-        let hij = document.getElementById("sb_4");
-        let klm = document.getElementById("sb_t_4");
-        let nop = document.getElementById("sb_o_4");
-
         ab.innerHTML = name;
+
+        const fname = urlParams.get('fname');
+        let cd = document.getElementById("fname");
         cd.innerHTML = fname;
+
+        const contact = urlParams.get('contact');
+        let ef = document.getElementById("contact");
         ef.innerHTML = contact;
+
+        const institute = urlParams.get('institute');
+        let gh = document.getElementById("institute");
         gh.innerHTML = institute;
+
+        const degree = urlParams.get('class');
+        let ij = document.getElementById("class");
         ij.innerHTML = degree;
+
+        const gender = urlParams.get('gender');
+        let kl = document.getElementById("gender");
         kl.innerHTML = gender;
+
+        const sb_1 = urlParams.get('sb_1');
+        let mn = document.getElementById("sb_1");
         mn.innerHTML = sb_1;
+
+        const sb_t_1 = urlParams.get('sb_t_1');
+        let op = document.getElementById("sb_t_1");
         op.innerHTML = sb_t_1;
+
+        const sb_o_1 = urlParams.get('sb_o_1');
+        let qr = document.getElementById("sb_o_1");
         qr.innerHTML = sb_o_1;
+
+        const sb_2 = urlParams.get('sb_2');
+        let st = document.getElementById("sb_2");
         st.innerHTML = sb_2;
+
+        const sb_t_2 = urlParams.get('sb_t_2');
+        let uv = document.getElementById("sb_t_2");
         uv.innerHTML = sb_t_2;
+
+        const sb_o_2 = urlParams.get('sb_o_2');
+        let wx = document.getElementById("sb_o_2");
         wx.innerHTML = sb_o_2;
+
+        const sb_3 = urlParams.get('sb_3');
+        let yz = document.getElementById("sb_3");
         yz.innerHTML = sb_3;
+
+        const sb_t_3 = urlParams.get('sb_t_3');
+        let abc = document.getElementById("sb_t_3");
         abc.innerHTML = sb_t_3;
+
+        const sb_o_3 = urlParams.get('sb_o_3');
+        let efg = document.getElementById("sb_o_3");
         efg.innerHTML = sb_o_3;
+
+        const sb_4 = urlParams.get('sb_4');
+        let hij = document.getElementById("sb_4");
         hij.innerHTML = sb_4;
+
+        const sb_t_4 = urlParams.get('sb_t_4');
+        let klm = document.getElementById("sb_t_4");
         klm.innerHTML = sb_t_4;
+
+        const sb_o_4 = urlParams.get('sb_o_4');
+        let nop = document.getElementById("sb_o_4");
         nop.innerHTML = sb_o_4;
-        $(document).on('keyup')
 </script>
 <script>
   $(document).ready(function(){
