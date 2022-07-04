@@ -4,6 +4,11 @@
 #sb_1, #sb_2, #sb_3, #sb_4{
     text-align: left !important;
 }
+
+.hidden
+{
+    display:none !important;
+}
 .aling
 {
     text-align: center;
